@@ -1,0 +1,16 @@
+let reverseString = function(s) { 
+    var left = 0;
+    var right = s.length - 1;
+    while (left < right) {
+        let temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        ++left;
+        --right;
+    }
+    console.log(s)
+};
+
+var word = ['h','e','l','l','o'];
+reverseString(word)
+
